@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'lib/index.ts'),
       name: 'FortressUtils',
-      fileName: (format) => format === 'es' ? 'index.js' : `index.${format}.js`,
+      fileName: format => format === 'es' ? 'index.js' : `index.${format}.js`,
     },
   },
   resolve: {
